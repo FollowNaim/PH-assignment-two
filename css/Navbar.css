@@ -34,7 +34,7 @@ header nav .nav-lists i {
   display: none;
   font-size: 22px;
 }
-.active {
+header .active {
   background: var(--accent);
   font-weight: 500;
   padding: 8px 18px;

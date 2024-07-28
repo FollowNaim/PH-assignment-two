@@ -10,6 +10,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./css/Global.css" />
     <link rel="stylesheet" href="./css/Navbar.css" />
     <link rel="stylesheet" href="./css/hero.css" />
@@ -19,6 +21,7 @@
     <link rel="stylesheet" href="./css/calculator.css" />
     <link rel="stylesheet" href="./css/our-team.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/caurosel.css" />
     <title>Fitness</title>
   </head>
   <body>
@@ -317,6 +320,65 @@
         </div>
       </section>
 
+      <section class="caurosel">
+        <h1>
+          Start Training <br />
+          <span>With me</span>
+        </h1>
+        <div class="owl-carousel owl-theme">
+          <div class="item item1">
+            <div class="item-bg"></div>
+            <div class="item-content">
+              <h3 class="item-title">Fitness</h3>
+              <p class="item-desc">
+                We support businesses through periods of expansion, succession.
+              </p>
+              <a class="item-desc" href="#">Learn More</a>
+            </div>
+          </div>
+          <div class="item item2">
+            <div class="item-bg"></div>
+            <div class="item-content">
+              <h3 class="item-title">Body Builder</h3>
+              <p class="item-desc">
+                There are many variations of passages of Lorem Ipsum available.
+              </p>
+              <a class="item-desc" href="#">Learn More</a>
+            </div>
+          </div>
+          <div class="item item3">
+            <div class="item-bg"></div>
+            <div class="item-content">
+              <h3 class="item-title">Yoga</h3>
+              <p class="item-desc">
+                We support businesses through periods of expansion, succession.
+              </p>
+              <a class="item-desc" href="#">Learn More</a>
+            </div>
+          </div>
+          <div class="item item4">
+            <div class="item-bg"></div>
+            <div class="item-content">
+              <h3 class="item-title">Training</h3>
+              <p class="item-desc">
+                In a professional context it often happens that private or
+                corporate clients.
+              </p>
+              <a class="item-desc" href="#">Learn More</a>
+            </div>
+          </div>
+          <div class="item item5">
+            <div class="item-bg"></div>
+            <div class="item-content">
+              <h3 class="item-title">Cycling</h3>
+              <p class="item-desc">
+                There are many variations of passages of Lorem Ipsum available.
+              </p>
+              <a class="item-desc" href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Footer section -->
 
       <footer>
@@ -355,5 +417,34 @@
         </div>
       </footer>
     </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          stagePadding: 50,
+          loop: true,
+          margin: 20,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 4,
+            },
+          },
+        });
+      });
+    </script>
   </body>
 </html>

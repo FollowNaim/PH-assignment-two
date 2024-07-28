@@ -1,0 +1,144 @@
+.caurosel {
+  margin-top: 100px;
+}
+.caurosel > h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #a6ff00;
+  font-family: "Space Grotesk", Sans-serif;
+  font-size: 2.6rem;
+  line-height: 4rem;
+}
+.caurosel > h1 span {
+  color: #ffff;
+}
+.owl-carousel {
+  margin-top: 60px;
+}
+.owl-carousel .owl-stage-outer {
+  overflow: visible;
+}
+.owl-carousel .item {
+  height: 360px;
+  width: 260px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1),
+    box-shadow 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+}
+.owl-carousel .item::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  z-index: 22;
+  background: linear-gradient(to bottom, transparent, #000000c7);
+  /* opacity: 0; */
+}
+.owl-carousel .item:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  box-shadow: 0 25px 55px rgb(0 0 0 / 22%);
+}
+/* .owl-carousel .item:hover::before {
+  opacity: 1;
+} */
+.owl-carousel .item-bg:hover {
+  transform: scale(1.2);
+}
+.owl-carousel .item:hover .item-bg {
+  -webkit-transform: scale(1.2);
+  transition: transform 5s cubic-bezier(0.1, 0.2, 0.7, 1);
+}
+
+.owl-carousel .item1 .item-bg {
+  background-image: url("../images/fitness.jpg");
+}
+.owl-carousel .item2 .item-bg {
+  background-image: url("../images/body.jpg");
+}
+.owl-carousel .item3 .item-bg {
+  background-image: url("../images/yoga.jpg");
+}
+.owl-carousel .item4 .item-bg {
+  background-image: url("../images/training.jpg");
+}
+.owl-carousel .item5 .item-bg {
+  background-image: url("../images/cycling.jpg");
+}
+
+.owl-carousel .item-bg {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.6s cubic-bezier(0.24, 1, 0.3, 1);
+  transition: transform 5s ease, opacity 0.5s ease 0.25s;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  z-index: 0;
+}
+.owl-carousel .item:hover .item-content {
+  transform: translateY(0);
+}
+.owl-carousel .item:hover .item-content .item-desc {
+  opacity: 1;
+}
+
+.owl-carousel .item-content {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  z-index: 55;
+  padding: 2rem 0.8rem;
+  transform: translateY(calc(100% - 7rem));
+  align-self: flex-end;
+  text-align: left;
+  transition: all 0.5s cubic-bezier(0.05, 0.2, 0.1, 1);
+}
+
+.owl-carousel .item .item-content .item-title {
+  color: #fff;
+  padding: 1rem 0;
+  font-family: "Space Grotesk", Sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.owl-carousel .item .item-content p {
+  color: #fff;
+  font-size: 14px;
+  font-family: "Space Grotesk", Sans-serif;
+  padding: 0 0 1.3rem 0;
+}
+.owl-carousel .item .item-content a {
+  background: #a6ff00;
+  border-color: #a6ff00;
+  color: #000000;
+  text-decoration: none;
+  font-family: "Space Grotesk", Sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0.7em 2em 0.7em 2em;
+  border: 1px solid #a6ff00;
+  line-height: 1.6;
+  border-radius: 50px;
+}
+.owl-carousel .item .item-content a:hover {
+  background: white;
+  color: #000000;
+}
+.owl-carousel .item-desc {
+  opacity: 0;
+  transition: all 0.7s cubic-bezier(0.05, 0.2, 0.1, 1);
+}
