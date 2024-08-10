@@ -20,27 +20,27 @@
 }
 .team .card1 {
   background: linear-gradient(to bottom, transparent, black),
-    url("../images/trainer1.png");
+    url("../images/trainer1.jpg");
 }
 .team .card2 {
   background: linear-gradient(to bottom, transparent, black),
-    url("../images/trainer2.png");
+    url("../images/trainer2.jpg");
 }
 .team .card3 {
   background: linear-gradient(to bottom, transparent, black),
-    url("../images/trainer3.png");
+    url("../images/trainer3.jpg");
 }
 .team .card4 {
   background: linear-gradient(to bottom, transparent, black),
-    url("../images/trainer4.png");
+    url("../images/trainer4.jpg");
 }
 .team .card5 {
   background: linear-gradient(to bottom, transparent, black),
-    url("../images/trainer5.png");
+    url("../images/trainer5.jpg");
 }
 .team .card6 {
   background: linear-gradient(to bottom, transparent, black),
-    url("../images/trainer6.png");
+    url("../images/trainer6.jpg");
 }
 .team .card {
   width: 100%;

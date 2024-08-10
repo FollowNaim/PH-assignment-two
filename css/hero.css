@@ -23,6 +23,11 @@
   background: transparent;
   border: 1px solid var(--text-primary);
 }
+.hero > .left .btns .btn-two:hover {
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+}
 
 .hero .right {
 }
@@ -32,11 +37,10 @@
 }
 .hero .right .img .floating-box {
   position: absolute;
-
   padding: 15px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(6px);
 }
 .hero .right .img .floating-box1 {
   top: 30%;
@@ -51,7 +55,9 @@
   gap: 8px;
 }
 .hero .right .img .floating-box2 .left span {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;

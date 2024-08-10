@@ -35,6 +35,13 @@ body {
 .head {
   max-width: 600px;
 }
+button {
+  transition: all 0.5s linear;
+}
+button:hover {
+  background: #fff;
+  color: #000;
+}
 
 .btn-primary {
   background: var(--accent);
@@ -52,6 +59,9 @@ i {
   cursor: pointer;
 }
 
+main {
+  overflow-x: hidden;
+}
 /* @media only screen and (max-width: 576px) {
   body {
     padding: 0 10px;

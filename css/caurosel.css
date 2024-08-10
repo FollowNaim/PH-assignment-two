@@ -4,7 +4,7 @@
 .caurosel > h1 {
   text-align: center;
   text-transform: uppercase;
-  color: #a6ff00;
+  color: var(--accent);
   font-family: "Space Grotesk", Sans-serif;
   font-size: 2.6rem;
   line-height: 4rem;
@@ -39,16 +39,12 @@
   height: 70%;
   z-index: 22;
   background: linear-gradient(to bottom, transparent, #000000c7);
-  /* opacity: 0; */
 }
 .owl-carousel .item:hover {
   cursor: pointer;
   transform: translateY(-10px);
   box-shadow: 0 25px 55px rgb(0 0 0 / 22%);
 }
-/* .owl-carousel .item:hover::before {
-  opacity: 1;
-} */
 .owl-carousel .item-bg:hover {
   transform: scale(1.2);
 }
@@ -122,15 +118,15 @@
   padding: 0 0 1.3rem 0;
 }
 .owl-carousel .item .item-content a {
-  background: #a6ff00;
-  border-color: #a6ff00;
-  color: #000000;
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
   text-decoration: none;
   font-family: "Space Grotesk", Sans-serif;
   font-size: 14px;
   font-weight: 700;
   padding: 0.7em 2em 0.7em 2em;
-  border: 1px solid #a6ff00;
+  border: 1px solid var(--accent);
   line-height: 1.6;
   border-radius: 50px;
 }
@@ -141,4 +137,10 @@
 .owl-carousel .item-desc {
   opacity: 0;
   transition: all 0.7s cubic-bezier(0.05, 0.2, 0.1, 1);
+}
+
+@media only screen and (max-width: 576px) {
+  .owl-carousel .item {
+    width: 100%;
+  }
 }
