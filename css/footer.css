@@ -55,4 +55,7 @@ footer .down p {
     justify-items: start;
     gap: 30px;
   }
+  footer .down p {
+    text-align: left;
+  }
 }

@@ -44,4 +44,7 @@
     flex-direction: column;
     gap: 25px;
   }
+  .extra-mile .left .btn {
+    width: 100%;
+  }
 }
